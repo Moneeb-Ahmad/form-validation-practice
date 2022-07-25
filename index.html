@@ -4,7 +4,36 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./scripts/script.js" defer></script>
-    <title></title>
+    <title>Form Validation Practices</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <div class="input-container">
+        <h1>Enter the following information</h1>
+        <div>
+          <label for="email">Eamil</label>
+          <input type="email" placeholder="example@domain.com" name="email" />
+        </div>
+        <div>
+          <label for="country">Country</label>
+          <input type="text" placeholder="USA" name="country" />
+        </div>
+        <div>
+          <label for="zip">Zip Code</label>
+          <input type="tel" placeholder="12345" name="zip" />
+        </div>
+        <div>
+          <label for="pass">Password</label>
+          <input type="password" name="pass" />
+        </div>
+        <div>
+          <label for="pass-conf">Password Confirmation</label>
+          <input type="password" name="pass-conf" />
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
