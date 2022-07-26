@@ -7,28 +7,53 @@
     <title>Form Validation Practices</title>
   </head>
   <body>
-    <form>
+    <form novalidate>
       <div class="input-container">
         <h1>Enter the following information</h1>
         <div>
           <label for="email">Eamil</label>
-          <input type="email" placeholder="example@domain.com" name="email" />
+          <input
+            type="email"
+            id="email"
+            placeholder="example@domain.com"
+            name="email"
+            required
+          />
+          <span class="error" aria-live="polite"></span>
         </div>
         <div>
           <label for="country">Country</label>
-          <input type="text" placeholder="USA" name="country" />
+          <input
+            type="text"
+            id="country"
+            placeholder="USA"
+            name="country"
+            required
+          />
+          <span class="error" aria-live="polite"></span>
         </div>
         <div>
           <label for="zip">Zip Code</label>
-          <input type="tel" placeholder="12345" name="zip" />
+          <input
+            type="tel"
+            id="zip"
+            placeholder="12345"
+            name="zip"
+            required
+            minlength="5"
+            maxlength="5"
+          />
+          <span class="error" aria-live="polite"></span>
         </div>
         <div>
           <label for="pass">Password</label>
-          <input type="password" name="pass" />
+          <input type="password" id="pass" name="pass" required />
+          <span class="error" aria-live="polite"></span>
         </div>
         <div>
           <label for="pass-conf">Password Confirmation</label>
-          <input type="password" name="pass-conf" />
+          <input type="password" id="pass-conf" name="pass-conf" required />
+          <span class="error" aria-live="polite"></span>
         </div>
         <div>
           <button>Submit</button>

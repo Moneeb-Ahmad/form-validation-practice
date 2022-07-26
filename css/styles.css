@@ -21,20 +21,35 @@ h1 {
   display: flex;
   gap: 8px;
   flex-grow: 1;
-  width: 40%;
+  width: 45%;
 }
 
 input {
   border: none;
   background-color: #111111;
   color: #dddddd;
-  width: 40%;
-}
-
-input:invalid {
-  border: 2px solid red;
+  width: 30%;
 }
 
 input:valid {
   border: 2px solid green;
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+
+  visibility: hidden;
+}
+
+.error.active {
+  padding: 0.3em;
+  visibility: visible;
 }
